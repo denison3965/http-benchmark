@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+  wrk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: http-benchmark
+    volumes:
+      - ./scripts:/var/benchmark
